@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Listings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f5f2;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        h2 {
+            color: #7b4a30;
+        }
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .recipe-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .recipe-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .rating {
+            color: #f5a623;
+            font-size: 14px;
+        }
+        .pagination {
+            margin: 20px;
+        }
+        .pagination a {
+            text-decoration: none;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 5px;
+            background: #7b4a30;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>All Recipes</h2>
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <img src="image.png" alt="Recipe Image">
+                <h3>Ridiculously Good Air Fryer Broccoli</h3>
+                <p class="rating">⭐⭐⭐⭐ 4.7 Average</p>
+            </div>
+            <div class="recipe-card">
+                <img src="image.png" alt="Recipe Image">
+                <h3>My New Favorite Pizza Has a Cottage Cheese Crust</h3>
+                <p class="rating">⭐⭐⭐⭐⭐ 4.8 Average</p>
+            </div>
+            <!-- Add more recipe cards here -->
+        </div>
+        <div class="pagination">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">...</a>
+            <a href="#">107</a>
+        </div>
+    </div>
+</body>
+</html>

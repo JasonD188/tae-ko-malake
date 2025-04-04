@@ -1,0 +1,205 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+.css {
+    background-color: white;  
+    display: flex;              
+    justify-content: center;    
+    align-items: center;       
+    min-height: 100vh;          
+    padding: 1.5rem;           
+  }
+  
+
+
+
+
+
+
+
+.my-class {
+max-width: 56rem;
+width: 100%;
+background-color: white;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+border-radius: 0.5rem;
+padding: 1.5rem;
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+background-color: #F4EDE5;
+margin-top: -100px;
+}
+.contact {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #2d3748;
+}
+.set-text {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4a5568;
+}
+.settexts {
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    padding: 0.5rem
+   
+}
+#inputText {
+    text-transform: capitalize
+}
+#inputt {
+    text-transform: history;
+}
+.settexts:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #6b7280;
+}
+.send {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 15px;
+}
+.send:hover {
+    transform: scale(1.1);
+}
+.contact-details {
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    background-color: #F4F1EA;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    z-index: 1000;
+}
+.cnt-details {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+.texts {
+    font-size: 0.875rem;
+    color: #4a5568;
+}
+.nav-bar {
+    background: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    height: 80px;
+    position: absolute;
+    left: 800px;
+    top: 0px;
+  cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-shrink: 0;
+    position: relative;
+    margin-top:1px;
+ 
+  }
+  
+  .tab {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  
+  input[type="text"]{
+    border-radius: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-width: 1px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    width: 200px;
+    position: relative;
+    color: white;
+    background-color: #333;
+  
+  
+  }
+  .search-form {
+    margin-top: -15px;
+  }
+  .texts {
+    color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    position: relative;
+    flex: 1;
+  }
+@media (min-width: 768px) {
+    .my-class {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 1440px) { 
+    body {
+        padding: 10px;
+    }
+    .my-class {
+        padding: 1rem;
+    }
+    .contact-details {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        box-shadow: none;
+        padding: 0.75rem;
+        margin-top: 1rem;
+        z-index: 999;
+        cursor: grab;
+    }
+    .contact-details iframe {
+      width: 100%;
+      height: 150px;
+    }
+    .contact {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .set-text {
+        font-size: 0.75rem;
+    }
+    .settexts {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+    }
+    .send {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .my-class img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        margin-bottom: 1rem;
+    }
+}
